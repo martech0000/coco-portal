@@ -187,6 +187,107 @@ body {
     border: 1px solid #eee;
 }
 
+/* ガイドパネル（初めての方はこちら） */
+.guide-toggle {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 6px 14px;
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+    font-family: inherit;
+}
+
+.guide-toggle:hover {
+    background-color: #e0607a;
+    transform: scale(1.03);
+}
+
+.guide-panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+    width: 100%;
+}
+
+.guide-panel.open {
+    max-height: 600px;
+    padding-top: 15px;
+}
+
+.guide-inner {
+    background-color: var(--alert-bg);
+    border-radius: 10px;
+    padding: 18px;
+    border: 1px solid var(--secondary-color);
+}
+
+.guide-inner h3 {
+    font-size: 16px;
+    color: var(--accent-color);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.guide-inner p {
+    font-size: 13px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    color: var(--text-main);
+}
+
+.guide-example {
+    background-color: white;
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+    padding: 14px;
+    margin: 10px 0;
+    position: relative;
+}
+
+.guide-example p {
+    font-size: 13px;
+    line-height: 1.8;
+    color: var(--text-main);
+    margin-bottom: 0;
+}
+
+.guide-note {
+    font-size: 12px !important;
+    color: var(--text-light) !important;
+}
+
+.guide-divider {
+    height: 1px;
+    background-color: var(--secondary-color);
+    margin: 14px 0;
+}
+
+.guide-line-btn {
+    display: block;
+    text-align: center;
+    background: linear-gradient(135deg, #4caf50, #2e7d32);
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 12px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 3px 10px rgba(76, 175, 80, 0.25);
+}
+
+.guide-line-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(76, 175, 80, 0.35);
+}
+
 /* サブスクサービス表示 */
 .subscriptions {
     margin-top: 12px;
