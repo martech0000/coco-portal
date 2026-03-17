@@ -47,19 +47,39 @@
                 <div class="card-icon">💳</div>
                 <div class="card-content">
                     <h2>COCO 会員制サイト（MOSH決済・登録）</h2>
-                    <p>会員登録、プランの確認や変更、アカウント管理などはこちらから。</p>
+                    <p>定例会のアーカイブや基礎知識はこちらに格納してあります。</p>
                 </div>
             </a>
 
             <!-- Step 2: オープンチャット -->
-            <a href="#" class="card step-card">
-                <span class="step-badge">Step 2</span>
-                <div class="card-icon">💬</div>
-                <div class="card-content">
-                    <h2>COCO オープンチャット</h2>
-                    <p>日々の交流、日報の提出、質問はこちらから。一番最初に案内されるチャットですので、ぜひご入室ください。</p>
+            <div class="card step-card" style="cursor: default; flex-direction: column;">
+                <div style="display: flex; align-items: flex-start; width: 100%;">
+                    <span class="step-badge">Step 2</span>
+                    <div class="card-icon">💬</div>
+                    <div class="card-content">
+                        <h2>COCO オープンチャット</h2>
+                        <p>日々の交流や、ちょっとしたみんなの学びになるような質問はこちらから。一番最初に案内されるチャットですので、ぜひご入室ください。</p>
+                        <button class="guide-toggle" onclick="document.getElementById('oc-guide').classList.toggle('open')">📝 初めての方はこちら ▼</button>
+                    </div>
                 </div>
-            </a>
+                <div id="oc-guide" class="guide-panel">
+                    <div class="guide-inner">
+                        <h3>🎉 オープンチャットへようこそ！</h3>
+                        <p>まずは以下のように<strong>自己紹介</strong>をお願いします。</p>
+                        <div class="guide-example">
+                            <p>初めまして！○○と申します。<br>
+                            普段は○○をしています。<br>
+                            Threadsアカウント：@○○○○</p>
+                        </div>
+                        <p class="guide-note">👆 自分がしていることと、Threadsアカウントをご記入ください。</p>
+                        <div class="guide-divider"></div>
+                        <p>このオープンチャットでは、日々のちょっとした<strong>気づき・学び・共有</strong>などを基本的にしていきます。</p>
+                        <p>パーソナルな質問や個別のご相談は<strong>公式LINE</strong>にお願いいたします。<br>
+                        まだ登録されていない方は、こちらからどうぞ 👇</p>
+                        <a href="https://lin.ee/aBHg5Ch" class="guide-line-btn" target="_blank">📱 公式LINEに登録する</a>
+                    </div>
+                </div>
+            </div>
 
             <!-- Step 3: Googleアカウントログイン -->
             <a href="https://accounts.google.com/" class="card highlight-card" target="_blank">
